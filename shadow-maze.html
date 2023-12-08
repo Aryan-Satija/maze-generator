@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj7.css">
+    <title>MAZE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="modal">
+            <div class="timer"></div>
+            <div style="display: flex; align-items: center; gap:10px;">
+                <input type="radio" id="basic" name="level">
+                <label for="basic"></label>
+                <div>BASIC</div>
+            </div>
+            <div style="display: flex; align-items: center; gap:10px;">
+                <input type="radio" id="medium" name="level" checked>
+                <label for="medium"></label>
+                <div>MEDIUM</div>
+            </div>
+            <div style="display: flex; align-items: center; gap:10px;">
+                <input type="radio" id="hard" name="level">
+                <label for="hard"></label>
+                <div>HARD</div>
+            </div>
+            <div style="display: flex; align-items: center; gap:10px;">
+                <input type="radio" id="extreme" name="level">
+                <label for="extreme"></label>
+                <div>EXTREME</div>
+            </div>
+        </div>
+        <div class="maze">
+        </div>
+        <div>
+            <button class="btn" newGame>NEW GAME</button>
+            <button class="btn" openModal>OPEN MODAL</button>
+        </div>
+    </div>
+    <script src="proj7.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</body>
+</html>
